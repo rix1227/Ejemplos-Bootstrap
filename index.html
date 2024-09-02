@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <link rel="stylesheet" href="css/app.css">
@@ -70,15 +71,53 @@
         <h1 class="fs-1">Encabezado con Fontsize</h1>
         <p class="fs-1">Parrafo con fontsize1</p>
 
+        <!--Utilidades para alinear textos-->
+
+        <p class="text-start">Texto a la izquieda</p>
+        <p class="text-end">Texto a la derecha</p>
+        <p class="text-center">Texto al centro</p>
+
+        <!--CON MEDIAQUERIES-->
+        <p class="text-end text-md-center text-lg-start">Texto a la derecha,centro e izquieda</p>
+
+        <!--Capitalizacion-->
+         <p class="text-lowercase">MINUSCULAS</p>
+         <p class="text-uppercase">mayusculas</p>
+         <p class="text-capitalize">encabezado con tipo capital</p>
+
+         <!--control con font-weigth-->
+         <p class="fw-bold">Texto</p>
+         <p class="fw-normal">Texto</p>
+         <p class="fw-light">Texto</p>
     </section>
 
     <section class="seccion">
         <h1 class="text-center my-5 heading">Colores en Bootstrap</h1>
 
+        <h1 class="text-primary">Colores en texto</h1>
+        <h1 class="text-secondary">Colores en texto</h1>
+        <h1 class="text-danger">Colores en texto</h1>
+        <h1 class="text-warning">Colores en texto</h1>
+        <h1 class="text-success">Colores en texto</h1>
+
+        <H1>Color en background</H1>
+        <div class="bg-secondary text-success">Contenido</div>
+
+        
     </section>
 
     <section class="seccion">
         <h1 class="text-center my-5 heading">Imágenes</h1>
+
+       
+
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-thumbnail" src="img/curso_1.jpg" alt="imagen curso 1">
+                </div>
+            </div>
+        </div>
 
         
     </section>
@@ -87,16 +126,53 @@
     <section class="seccion">
         <h1 class="text-center my-5 heading">Botones</h1>
 
+        <button type="button" class="btn btn-primary">Agregar <i class="bi bi-cloud-plus"></i></button>
+        <button type="button" class="btn btn-danger"><i class="bi bi-trash"></i>Eliminar</button>
 
+        <a href="#" class="btn btn-success">Enlace<i class="bi bi-send"></i></a>
+        <button type="submit" class="btn btn-warning" >Enviar formulario<i class="bi bi-send-check-fill"></i></button>
+
+        <button type="button" class="btn btn-outline-danger ">ELiminar reto<i class="bi bi-trash"></i></button>
     </section>
 
     <section class="seccion">
         <h1 class="text-center my-5 heading">Margins y Paddings</h1>
 
+        <div class="container-xl">
+            <div class="bg-success pb-5 text-white">
+                Ejemplo de padding
+            </div>
+
+            <div class="bg-danger pt-5 mt-3 text-white">
+                Ejemplo de margin
+            </div>
+
+            <div class="d-grid gap-5">
+                <div class="bg-success text-white">
+                    Ejemplo de padding
+                </div>
+    
+                <div class="bg-danger text-white">
+                    Ejemplo de margin
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
     <section class="seccion">
         <h1 class="text-center my-5 heading">Spinners</h1>
+
+        <div class="d-flex  justify-content-center">
+            <div class="spinner-border">Spinner</div>
+        </div>
+        
+        <div class="spinner-border text-primary">Spinner</div>
+        <div class="spinner-border spinner-border-sm"></div>
+        <div class="spinner-border">Spiner</div>
+        <div class="spinner-border">Spinner</div>
+
 
     </section>
 
@@ -134,5 +210,7 @@
         <h1 class="text-center my-5 heading">Off Canvas</h1>
 
     </section>
+
+    <script src="js/bootstrap.bundle.js"></script>
 
 </html>
