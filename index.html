@@ -165,7 +165,8 @@
         <h1 class="text-center my-5 heading">Spinners</h1>
 
         <div class="d-flex  justify-content-center ">
-            <div class="spinner-border">Spinner</div>
+            <div class="spinner-border text-primary" role="status">
+               <span class="visually-hidden"> Cargando</span></div>
         </div>
         
         <div class="spinner-border text-primary">Spinner</div>
@@ -179,16 +180,103 @@
     <section class="seccion">
         <h1 class="text-center my-5 heading">Cards</h1>
 
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/curso_1.jpg" alt="imagen curso">
+                        <div class="card-header">
+                            Desde el header
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Curso de Guitarra</h3>
+                            <p class="card-text">Descripcion</p>
+                            <a href="#" class="btn btn-primary d-block">Tomar curso</a>
+                        </div>
+                    </div>
+                </div> <!--col-md-4-->
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/curso_2.jpg" alt="imagen curso">
+                        <div class="card-header">
+                            Desde el header
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Curso de Guitarra</h3>
+                            <p class="card-text">Descripcion</p>
+                            <a href="#" class="btn btn-primary d-block">Tomar curso</a>
+                        </div>
+                    </div>
+                </div> <!--col-md-4-->
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/curso_3.jpg" alt="imagen curso">
+                        <div class="card-header">
+                            Desde el header
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Curso de Guitarra</h3>
+                            <p class="card-text">Descripcion</p>
+                            <a href="#" class="btn btn-primary d-block">Tomar curso</a>
+                        </div>
+                    </div>
+                </div> <!--col-md-4-->
+            </div>
+        </div>
+
     </section>
 
     <section class="seccion">
         <h1 class="text-center my-5 heading">Formularios</h1>
+
+        <div class="container-xl">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 ">
+                    <form action="">
+                        <legend>Nuevo cliente</legend>
+
+                        
+                        <div class="mb-3">
+                            <label class="form-label" for="nombre">Nombre</label>
+                            <input class="form-control" type="text" name="" id="nombre">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="empresa">Empresa</label>
+                            <input class="form-control" type="text" name="" id="empresa">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Registrar cliente</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
 
     </section>
 
     <section class="seccion">
         <h1 class="text-center my-5 heading">Toasts</h1>
 
+        <button type="button" class="btn btn-primary" id="toastBtn">Mostrar notificacion</button>
+        
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 10;">
+            <div id="toast" class="toast hide">
+                <div class="toast-header">
+                    <strong class="me-auto">Email</strong>
+                    <small>Hace 3 minutos</small>
+                    <button type="button" data-bs-dismiss="toast" class="btn-close"></button>
+                </div>
+                <div class="toast-body">
+                    Has recibido un mensaje 
+    
+                </div>
+            </div>
+        </div>
+       
+    
     </section>
 
     <section class="seccion">
@@ -212,5 +300,14 @@
     </section>
 
     <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        document.querySelector('#toastBtn').onclick = e =>{
+            e.preventDefault();
+            //mostrar toast
+            const toastEl = document.querySelector('#toast');
+            const toast = new bootstrap.Toast(toastEl);
+            toast.show();
+        }
+    </script>
 
 </html>
