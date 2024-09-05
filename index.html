@@ -322,16 +322,114 @@
     <section class="seccion">
         <h1 class="text-center my-5 heading">Modals</h1>
 
+        <div class="container-xl">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Ver formulario</button>
+
+            <!--modal-->
+
+            <div id="modal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Nuevo cliente</h2>
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form action="">
+                                <legend>Nuevo cliente</legend>
+        
+                                
+                                <div class="mb-3">
+                                    <label class="form-label" for="nombre">Nombre</label>
+                                    <input class="form-control" type="text" name="" id="nombre">
+                                </div>
+        
+                                <div class="mb-3">
+                                    <label class="form-label" for="empresa">Empresa</label>
+                                    <input class="form-control" type="text" name="" id="empresa">
+                                </div>
+        
+                                
+                                
+                            </form>
+                        </div>
+                        <!--modal.footer-->
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Registrar cliente</button>
+
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-danger">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
     </section>
 
     <section class="seccion">
         <h1 class="text-center my-5 heading">Navs</h1>
+
+        <div class="container-xl">
+            <ul class="nav flex-column flex-md-row justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tienda virtual</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#" class="dropdown-item">Categorias</a>
+                        </li>
+
+                        <li></li>
+                            <a href="#" class="dropdown-item">Nuevos productos</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
    
     </section>
     
     <section class="seccion">
         <h1 class="text-center my-5 heading">Off Canvas</h1>
 
+        <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#menu">Administrar perfil</button>
+
+        <div id="menu" class="offcanvas offcanvas-start ">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title">Navegacion</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <h1>Administracion</h1>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Informacion</a>
+
+                    </li>
+
+                    <li class="nav-item"></li>
+                        <a href="#" class="nav-link">Pedidos</a>
+                        
+                    </li>
+                </ul>
+            </div>
+
+           
+        </div>
     </section>
 
     <script src="js/bootstrap.bundle.js"></script>
